@@ -20,9 +20,9 @@ export default function Buyer({
           <FaUserCircle className={styles.logo} />
           <p className={styles.p1}>{username}</p>
         </div>
-        <p className={styles.p2}>{isorg}</p>
-        <p className={styles.p2}>{opentobuy}</p>
-        <p className={styles.p3}>{quantity}</p>
+        <p className={styles.p2}> isorganic :{isorg}</p>
+        <p className={styles.p2}> crop :{opentobuy}</p>
+        <p className={styles.p3}> Quantity kgs : {quantity}</p>
         <p className={styles.p4}>{note}</p>
         <p className={styles.p5}>{format(Date(date), "dd/MM/yyyy")}</p>
         <button

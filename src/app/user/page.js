@@ -219,7 +219,7 @@ export default function User() {
                   placeholder="Please leave a notice here .."
                 ></textarea>
                 <button className={styles.btn1} onSubmit="submit">
-                  {isselling ? "Posting" : "Post"}
+                  {isselling.toString()}
                 </button>
               </form>
             </div>
