@@ -1,0 +1,259 @@
+@media screen and (min-width: 900px) {
+  .main_div {
+    width: 100vw;
+    padding: 40px 0;
+    box-shadow: rgb(137, 137, 137) 0 0 4px 0;
+    margin-top: 100px;
+    background-color: #f0f5f7;
+  }
+  @media (prefers-color-scheme: dark) {
+    .main_div {
+      width: 100vw;
+      padding: 40px 0;
+      box-shadow: rgb(137, 137, 137) 0 0 4px 0;
+      margin-top: 1000px;
+      background-color: #000000;
+    }
+  }
+  .outer_div {
+    display: flex;
+  }
+
+  .div1,
+  .div2,
+  .div3,
+  .div4 {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 5vw;
+  }
+  .d1p1 {
+    font-size: 25px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid;
+  }
+  .d1p2 {
+    font-size: 16px;
+  }
+  .d2p1 {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  .pp {
+    font-size: 14px;
+    padding: 1px 0;
+    line-height: 20px;
+    cursor: pointer;
+    user-select: none;
+  }
+  .pp:hover {
+    color: rgb(124, 124, 174);
+    border-bottom: 2px solid;
+  }
+  .divider {
+    border-top: 1px solid;
+    margin: 50px 0;
+  }
+  .icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .icon {
+    margin: 0 15px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+  .icon:hover {
+    color: rgb(186, 132, 17);
+  }
+  .intro {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+  }
+  .pp1 {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .pp2 {
+    font-weight: 500;
+    font-size: 14px;
+    margin-left: 5px;
+  }
+}
+@media screen and (max-width: 900px) and (min-width: 520px) {
+  .main_div {
+    width: 100vw;
+    padding: 40px 0;
+    box-shadow: rgb(193, 193, 193) 0 0 4px 0;
+    margin-top: 30px;
+    background-color: #f0f5f7;
+  }
+  @media (prefers-color-scheme: dark) {
+    .main_div {
+      width: 100vw;
+      padding: 40px 0;
+      box-shadow: rgb(193, 193, 193) 0 0 4px 0;
+      margin-top: 30px;
+      background-color: #000000;
+    }
+  }
+  .outer_div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .div1,
+  .div2,
+  .div3,
+  .div4 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 5vw;
+    margin: 10px 0;
+  }
+  .d1p1 {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+  .d1p2 {
+    font-size: 16px;
+  }
+  .d2p1 {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  .pp {
+    font-size: 14px;
+    padding: 5px 0;
+    line-height: 22px;
+    cursor: pointer;
+  }
+  .pp:hover {
+    color: blue;
+  }
+  .divider {
+    border-top: 1px solid;
+    margin: 50px 0;
+  }
+  .icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .icon {
+    margin: 0 20px;
+    font-size: 22px;
+  }
+  .intro {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+  }
+  .pp1 {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .pp2 {
+    font-weight: 500;
+    font-size: 14px;
+    margin-left: 5px;
+  }
+}
+@media screen and (max-width: 520px) {
+  .main_div {
+    width: 100vw;
+    padding: 40px 0;
+    box-shadow: rgb(193, 193, 193) 0 0 4px 0;
+    margin-top: 30px;
+    background-color: #f0f5f7;
+  }
+  @media (prefers-color-scheme: dark) {
+    .main_div {
+      width: 100vw;
+      padding: 40px 0;
+      box-shadow: rgb(193, 193, 193) 0 0 4px 0;
+      margin-top: 30px;
+      background-color: #000000;
+    }
+  }
+  .outer_div {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .div1,
+  .div2,
+  .div3,
+  .div4 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    margin: 10px 0;
+  }
+  .d1p1 {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+  .d1p2 {
+    font-size: 16px;
+  }
+  .d2p1 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  .pp {
+    font-size: 14px;
+    padding: 5px 0;
+    line-height: 22px;
+    cursor: pointer;
+    word-break: break-all;
+  }
+  .pp:hover {
+    color: blue;
+  }
+  .divider {
+    border-top: 1px solid;
+    margin: 50px 0;
+  }
+  .icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .icon {
+    margin: 0 20px;
+    font-size: 22px;
+  }
+  .intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+  }
+  .pp1 {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .pp2 {
+    font-weight: 500;
+    font-size: 14px;
+    margin-left: 5px;
+  }
+}

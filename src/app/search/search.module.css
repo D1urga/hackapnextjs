@@ -1,0 +1,108 @@
+@media screen and (min-width: 900px) {
+  .main {
+    margin-top: 65px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .list {
+    padding: 30px;
+    margin: 20px;
+    height: 400px;
+    box-shadow: rgb(163, 163, 163) 0 0 4px 0;
+    border-radius: 5px;
+    overflow: scroll;
+  }
+  .outer_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 50vw;
+  }
+  .header {
+    display: flex;
+    align-items: center;
+    background-color: rgb(238, 238, 244);
+    padding: 15px 20px;
+    margin: 5px 0;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+  .header p {
+    padding-left: 20px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+}
+@media screen and (max-width: 900px) and (min-width: 520px) {
+  .main {
+    margin-top: 65px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .list {
+    padding: 30px;
+    margin: 20px;
+    height: 400px;
+    box-shadow: rgb(163, 163, 163) 0 0 4px 0;
+    border-radius: 5px;
+    overflow: scroll;
+  }
+  .outer_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 80vw;
+  }
+  .header {
+    display: flex;
+    align-items: center;
+    background-color: rgb(238, 238, 244);
+    padding: 15px 20px;
+    margin: 5px 0;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+  .header p {
+    padding-left: 20px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+}
+@media screen and (max-width: 520px) {
+  .main {
+    margin-top: 65px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .list {
+    padding: 30px;
+    margin: 20px;
+    height: 400px;
+    box-shadow: rgb(163, 163, 163) 0 0 4px 0;
+    border-radius: 5px;
+    overflow: scroll;
+  }
+  .outer_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 75vw;
+  }
+  .header {
+    display: flex;
+    align-items: center;
+    background-color: rgb(238, 238, 244);
+    padding: 15px 20px;
+    margin: 5px 0;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+  .header p {
+    padding-left: 20px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+}

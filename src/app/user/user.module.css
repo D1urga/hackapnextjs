@@ -1,0 +1,135 @@
+@media screen and (min-width: 900px) {
+  .main {
+    width: 100vw;
+    height: calc(630px);
+    margin-top: 65px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .outer_div {
+    width: 100%;
+    display: flex;
+  }
+  .profile {
+    font-size: 30px;
+    font-weight: 500;
+    padding: 5px 20px;
+    border-bottom: 3px solid;
+  }
+  .logout {
+    border: none;
+    outline: none;
+    background-color: rgb(231, 59, 59);
+    color: white;
+    font-weight: 600;
+    border-radius: 30px;
+    margin-top: 30px;
+    height: 40px;
+    width: 24vw;
+    cursor: pointer;
+  }
+  .div1 {
+    width: 50%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .options {
+    display: flex;
+    margin-top: 30px;
+  }
+  .op1,
+  .op2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 12vw;
+    font-weight: 500;
+    margin: 2px 4px;
+    cursor: pointer;
+    border-radius: 20px;
+  }
+  .op1 {
+    background-color: black;
+    color: white;
+  }
+  .op2 {
+    border: 3px solid;
+  }
+  .div2 {
+    width: 50%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 10vw;
+    justify-content: center;
+  }
+  .buy,
+  .sell {
+    width: 100%;
+  }
+  .popularity {
+    margin-top: 30px;
+    font-size: 17px;
+    font-weight: 500;
+  }
+  .star {
+    font-size: 25px;
+    color: rgb(228, 194, 1);
+  }
+  .user {
+    font-size: 120px;
+    color: rgb(35, 35, 35);
+  }
+  .heading1 {
+    margin-bottom: 40px;
+  }
+  .p1 {
+    font-size: 22px;
+    margin-top: 10px;
+  }
+  .p2 {
+    font-size: 15px;
+  }
+  .pp {
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+  .input,
+  .input1 {
+    resize: none;
+    border: none;
+    outline: none;
+    width: 60%;
+    border: 2px solid;
+    margin-bottom: 10px;
+  }
+  .input {
+    height: 45px;
+    padding: 0 10px;
+  }
+  .input1 {
+    height: 80px;
+    padding: 10px;
+  }
+  .btn1 {
+    outline: none;
+    border: none;
+    height: 40px;
+    width: 60%;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+  }
+}
+@media screen and (max-width: 900px) and (min-width: 520px) {
+}
+@media screen and (max-width: 520px) {
+}
