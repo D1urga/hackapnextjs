@@ -11,8 +11,10 @@ import {
 } from "react-icons/fa";
 import { useState } from "react";
 const inter = Arsenal({ subsets: ["latin"], weight: "400" });
+import { useRouter } from "next/navigation";
 
 export default function LandingPage() {
+  const router = useRouter();
   const [page, setPage] = useState(0);
   const txt1 = `FarmFuture connects rural entrepreneurs and farmers
    directly with consumers through a simple, community-focused social commerce platform.
@@ -104,7 +106,14 @@ export default function LandingPage() {
             {list2[page]}
           </h1>
           <p className={styles.p1}>{langlist[page]}</p>
-          <button className={styles.btn}>Explore</button>
+          <button
+            className={styles.btn}
+            onClick={() => {
+              router.push("/scheme");
+            }}
+          >
+            Explore
+          </button>
         </div>
         <div className={styles.div2}>
           <img src="/i4.jpg" className={styles.img}></img>
