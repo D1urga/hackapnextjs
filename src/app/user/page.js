@@ -28,10 +28,10 @@ export default function User() {
   };
 
   const [formData, setFormData] = useState({
-    opentobuy: "sadasdasda",
-    quantity: "123",
-    note: "dasdasdsa",
-    isorganic: "organic",
+    opentobuy: "",
+    quantity: "",
+    note: "",
+    isorganic: "",
   });
   const handleInputChange = (event) => {
     setFormData({
@@ -40,11 +40,11 @@ export default function User() {
     });
   };
   const [formData1, setFormData1] = useState({
-    opentosell: "sadasdasda",
-    quantity: "123",
-    note: "dasdasdsa",
-    price: "234",
-    isorganic: "organic",
+    opentosell: "",
+    quantity: "",
+    note: "",
+    price: "",
+    isorganic: "",
   });
   const handleInputChange1 = (event) => {
     setFormData1({
