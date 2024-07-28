@@ -8,9 +8,12 @@ export default function Search() {
   const [isloading1, setIsLoading1] = useState(false);
   const fetchInfo = async () => {
     setIsLoading1(true);
-    const res = await fetch("http://localhost:3000/api/v1/user/getAllUser", {
-      credentials: "include",
-    });
+    const res = await fetch(
+      "https://farmfuturebackend.onrender.com/api/v1/user/getAllUser",
+      {
+        credentials: "include",
+      }
+    );
     const d = await res.json();
     setIsLoading1(false);
     return setData(d.data);
@@ -23,7 +26,7 @@ export default function Search() {
       <div className={styles.list}>
         {data &&
           data.map((val, index) => (
-            <div className={styles.outer_div}>
+            <div className={styles.outer_div} key={index}>
               <div className={styles.header}>
                 <FaUserCircle className={styles.logo} />
                 <p>{val.username}</p>

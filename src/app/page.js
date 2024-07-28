@@ -40,28 +40,34 @@ export default function Home() {
   const handleRegisterSubmit = async (event) => {
     event.preventDefault();
     // setIsUploading(true);
-    const response = await fetch("http://localhost:3000/api/v1/user/register", {
-      method: "POST",
-      credentials: "include",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(register),
-    });
+    const response = await fetch(
+      "https://farmfuturebackend.onrender.com/api/v1/user/register",
+      {
+        method: "POST",
+        credentials: "include",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(register),
+      }
+    );
     // setIsUploading(false);
     // const data = await response.json();
   };
   const handleSubmit = async (event) => {
     event.preventDefault();
     setCurrentValue(false);
-    const response = await fetch("http://localhost:3000/api/v1/user/login", {
-      method: "POST",
-      credentials: "include",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(formData),
-    });
+    const response = await fetch(
+      "https://farmfuturebackend.onrender.com/api/v1/user/login",
+      {
+        method: "POST",
+        credentials: "include",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      }
+    );
     const data = await response.json();
     setData(data.data);
     localStorage.setItem("user", data.data);

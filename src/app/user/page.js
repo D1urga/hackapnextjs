@@ -56,7 +56,7 @@ export default function User() {
     event.preventDefault();
     setIsbuying(true);
     const response = await fetch(
-      `http://localhost:3000/api/v1/buyer/buy/${localStorage.getItem(
+      `https://farmfuturebackend.onrender.com/api/v1/buyer/buy/${localStorage.getItem(
         "currentUser"
       )}`,
       {
@@ -75,7 +75,7 @@ export default function User() {
     setIsselling(true);
 
     const response = await fetch(
-      `http://localhost:3000/api/v1/seller/sell/${localStorage.getItem(
+      `https://farmfuturebackend.onrender.com/api/v1/seller/sell/${localStorage.getItem(
         "currentUser"
       )}`,
       {

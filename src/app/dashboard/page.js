@@ -11,18 +11,24 @@ export default function Dashboard() {
 
   const fetchInfo = async () => {
     setIsLoading1(true);
-    const res = await fetch("http://localhost:3000/api/v1/buyer/allbuyers", {
-      credentials: "include",
-    });
+    const res = await fetch(
+      "https://farmfuturebackend.onrender.com/api/v1/buyer/allbuyers",
+      {
+        credentials: "include",
+      }
+    );
     const d = await res.json();
     setIsLoading1(false);
     return setData(d.data);
   };
   const fetchInfo1 = async () => {
     setIsLoading2(true);
-    const res = await fetch("http://localhost:3000/api/v1/seller/allseller", {
-      credentials: "include",
-    });
+    const res = await fetch(
+      "https://farmfuturebackend.onrender.com/api/v1/seller/allseller",
+      {
+        credentials: "include",
+      }
+    );
     const d = await res.json();
     setIsLoading2(false);
     return setData1(d.data);
@@ -41,6 +47,7 @@ export default function Dashboard() {
               {data &&
                 data.map((val, index) => (
                   <Buyer
+                    key={index}
                     username={val.owner[0].username}
                     opentobuy={val.opentobuy}
                     quantity={val.quantity}
@@ -61,6 +68,7 @@ export default function Dashboard() {
               {data &&
                 data1.map((val, index) => (
                   <Buyer
+                    key={index}
                     username={val.owner[0].username}
                     opentobuy={val.opentobuy}
                     quantity={val.quantity}

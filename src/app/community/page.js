@@ -9,9 +9,12 @@ export default function Community() {
   const [isloading1, setIsLoading1] = useState(false);
   const fetchInfo = async () => {
     setIsLoading1(true);
-    const res = await fetch("http://localhost:3000/api/v1/buyer/getmessages", {
-      credentials: "include",
-    });
+    const res = await fetch(
+      "https://farmfuturebackend.onrender.com/api/v1/buyer/getmessages",
+      {
+        credentials: "include",
+      }
+    );
     const d = await res.json();
     setIsLoading1(false);
     return setData(d.data);
@@ -31,7 +34,7 @@ export default function Community() {
     event.preventDefault();
     setIsbuying(true);
     const response = await fetch(
-      `http://localhost:3000/api/v1/buyer/sendmessage/${localStorage.getItem(
+      `https://farmfuturebackend.onrender.com/api/v1/buyer/sendmessage/${localStorage.getItem(
         "currentUser"
       )}`,
       {
@@ -60,7 +63,7 @@ export default function Community() {
         <div className={styles.chat}>
           {data &&
             data.map((val, index) => (
-              <div className={styles.div3}>
+              <div className={styles.div3} key={index}>
                 <div className={styles.head}>
                   {" "}
                   <FaUserCircle />
